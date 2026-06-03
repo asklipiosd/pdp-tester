@@ -14,6 +14,10 @@ function fetch_testdata() {
       unzip -q download.zip
       cd ..
       cp -r tmp/pdp-archive-master-testdata-$1-PDP-$2/testdata .
+      if [ ! -d testdata/$1-PDP/$2 ]; then
+         echo "ERROR: δεν βρέθηκαν τεστ για τα θέματα: $1-$2" >&2
+      exit 1
+      fi
       rm -r tmp
    fi;
 }

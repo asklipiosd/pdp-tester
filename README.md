@@ -31,3 +31,7 @@ bash pdptester.sh 30-astrolavos a.out --cases 1,3,5-7,9
 bash pdptester.sh 30-astrolavos a.out --time_limit 2
 ```
 
+Σε περίπτωση που δεν βρεθούν λύσεις το πρόγραμμα κλείνει
+```
+ERROR: δεν βρέθηκαν τεστ για τα θέματα: astrolavos
+```
